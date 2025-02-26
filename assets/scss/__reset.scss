@@ -21,7 +21,9 @@ time, mark, audio, video {
 }
  
 body {
+    font-family: "Poppins", serif;
     line-height:1;
+    color: var(--black);
 }
  
 article,aside,canvas,details,figcaption,figure,
@@ -43,13 +45,14 @@ q:before, q:after {
     content:none;
 }
  
-a {
+a , button{
     margin:0;
     padding:0;
     border:0;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    color: var(--black);
 }
  
 ins {

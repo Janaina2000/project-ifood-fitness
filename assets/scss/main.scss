@@ -1,1 +1,17 @@
+
 @import './_reset.scss';
+@import './header.scss';
+
+:root{
+    --primary: #ea4c89;
+    --white: #ffffff;
+    --black: #000000
+}
+
+.container {
+    width: 100%;         /* O container ocupa toda a largura disponível */
+    max-width: 1200px;   /* Largura máxima do container */
+    margin: 0 auto;      /* Centraliza o container horizontalmente */
+    padding: 0 20px;     /* Adiciona um espaço interno de 20px nas laterais */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+}
