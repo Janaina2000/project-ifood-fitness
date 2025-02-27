@@ -206,4 +206,9 @@ input, select {
   box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
 }
 
+main {
+  width: calc(100% - 10rem);
+  margin-left: auto;
+}
+
 /*# sourceMappingURL=main.css.map */

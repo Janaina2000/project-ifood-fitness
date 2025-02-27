@@ -19,7 +19,7 @@ function loadHTML(file, selector) {
 // Carregar o cabeçalho e o rodapé ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
   loadHTML('assets/html/base/header.html', 'header');
- // loadHTML('src/html/pages/home/index.html', 'main');
+  loadHTML('assets/html/pages/home/index.html', 'main');
   loadHTML('assets/html/base/footer.html', 'footer');
 
 });

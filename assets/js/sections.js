@@ -17,13 +17,7 @@ function loadHTML(file, selector) {
 // Carregar o cabeçalho e o rodapé ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
   // Carregar HTML
-  loadHTML('src/html/pages/home/sections/01_hero.html', '#hero');
-  loadHTML('src/html/pages/home/sections/02_biography.html', '#biography');
-  loadHTML('src/html/pages/home/sections/03_experience.html', '#experience');
-  loadHTML('src/html/pages/home/sections/04_dreams.html', '#dreams');
-  loadHTML('src/html/pages/home/sections/05_skil.html', '#skil');
-  loadHTML('src/html/pages/home/sections/06_hobbis.html', '#hobbis');
-  loadHTML('src/html/pages/home/sections/07_projects.html', '#projects');
+  loadHTML('assets/html/pages/home/sections/01_hero.html', '#hero');
 
   
 
