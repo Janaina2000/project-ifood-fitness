@@ -147,31 +147,49 @@ input, select {
   object-fit: contain;
 }
 .header-menu .container-menu .button-hamburgue {
-  height: 1.5rem;
-  width: 1.5rem;
+  cursor: pointer;
+  height: 1.75rem;
+  width: 1.75rem;
   margin-left: 1rem;
 }
 .header-menu .container-menu .button-hamburgue .icon-hamburgue, .header-menu .container-menu .button-hamburgue .icon-hamburgue::before, .header-menu .container-menu .button-hamburgue .icon-hamburgue::after {
   display: block;
-  width: 100%;
+  width: 1.75rem;
   height: 3px;
   border-radius: 9999px;
   background-color: var(--black);
 }
 .header-menu .container-menu .button-hamburgue .icon-hamburgue {
   position: relative;
+  width: 1.35rem;
 }
 .header-menu .container-menu .button-hamburgue .icon-hamburgue::before {
   content: "";
   position: absolute;
   top: -0.45rem;
   left: 0;
+  transition: all 0.1s ease-in-out;
 }
 .header-menu .container-menu .button-hamburgue .icon-hamburgue::after {
   content: "";
   position: absolute;
   bottom: calc(-0.45rem - 1px);
   left: 0;
+  width: 1rem;
+  transition: all 0.1s ease-in-out;
+}
+.header-menu .container-menu .button-hamburgue:hover .icon-hamburgue {
+  width: 0px;
+}
+.header-menu .container-menu .button-hamburgue:hover .icon-hamburgue:after {
+  transform: rotate(-45deg);
+  width: 1.5rem;
+  bottom: 0;
+}
+.header-menu .container-menu .button-hamburgue:hover .icon-hamburgue::before {
+  transform: rotate(45deg);
+  top: 0;
+  width: 1.5rem;
 }
 
 :root {

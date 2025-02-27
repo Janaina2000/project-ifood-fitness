@@ -59,25 +59,30 @@
         }
 
         .button-hamburgue{
-            height: 1.5rem;
-            width: 1.5rem;
+            cursor: pointer;
+            height: 1.75rem;
+            width: 1.75rem;
             margin-left: 1rem;
 
             .icon-hamburgue, .icon-hamburgue::before, .icon-hamburgue::after{
                 display: block;
-                width: 100%;
+                width: 1.75rem;
                 height: 3px;
                 border-radius: 9999px;
                 background-color: var(--black);
+               
             }
 
             .icon-hamburgue{
                 position: relative;
+                width: 1.35rem;
+                
                 &::before{
                     content: '';
                     position: absolute;
                     top: -0.45rem;
                     left: 0;
+                    transition: all .1s ease-in-out;
                 }
 
                 &::after{
@@ -85,6 +90,27 @@
                     position: absolute;
                     bottom: calc(-0.45rem - 1px);
                     left: 0;
+                    width: 1rem;
+                    transition: all .1s ease-in-out;
+                }
+            }
+
+            &:hover{
+                .icon-hamburgue{
+                    width: 0px;
+
+                    &:after{
+                        transform: rotate(-45deg);
+                        width: 1.5rem;
+                        bottom: 0;
+                        
+                    }
+
+                    &::before{
+                        transform: rotate(45deg) ;
+                        top: 0;
+                        width: 1.5rem
+                    }
                 }
             }
         }
