@@ -18,12 +18,14 @@ time, mark, audio, video {
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    font-weight: 400;
 }
  
 body {
     font-family: "Poppins", serif;
     line-height:1;
     color: var(--black);
+    font-size: 0.75rem;
 }
  
 article,aside,canvas,details,figcaption,figure,
@@ -53,6 +55,7 @@ a , button{
     vertical-align:baseline;
     background:transparent;
     color: var(--black);
+    text-decoration: none;
 }
  
 ins {

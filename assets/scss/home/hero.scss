@@ -1,0 +1,42 @@
+
+.c-hero {
+    &__nav {
+        padding: 1rem;
+    }
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 1rem;
+
+        .c-list-item {
+            padding: 1rem;
+            border: 1px solid var(--primary);
+            overflow: hidden;
+            border-radius: 0.5rem;
+
+
+            svg {
+                height: 1.95em;
+                width: 1.95rem;
+                stroke-width: 2px;
+                color: var(--primary);
+                margin-bottom: 1rem;
+            }
+
+            .link-title{
+                font-weight: 600;
+                font-size: .75rem;
+                margin-bottom: 0.25rem;
+            }
+
+            .link-span {
+                color: var(--black);
+                font-size: 0.675rem;
+                font-weight: 400;
+                
+            }
+        }
+    }
+}

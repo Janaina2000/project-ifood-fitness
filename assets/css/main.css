@@ -19,12 +19,14 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-weight: 400;
 }
 
 body {
   font-family: "Poppins", serif;
   line-height: 1;
   color: var(--black);
+  font-size: 0.75rem;
 }
 
 article, aside, canvas, details, figcaption, figure,
@@ -54,6 +56,7 @@ a, button {
   vertical-align: baseline;
   background: transparent;
   color: var(--black);
+  text-decoration: none;
 }
 
 ins {
@@ -192,8 +195,42 @@ input, select {
   width: 1.5rem;
 }
 
+.c-hero__nav {
+  padding: 1rem;
+}
+.c-hero__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.c-hero__list .c-list-item {
+  padding: 1rem;
+  border: 1px solid var(--primary);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.c-hero__list .c-list-item svg {
+  height: 1.95em;
+  width: 1.95rem;
+  stroke-width: 2px;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.c-hero__list .c-list-item .link-title {
+  font-weight: 600;
+  font-size: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+.c-hero__list .c-list-item .link-span {
+  color: var(--black);
+  font-size: 0.675rem;
+  font-weight: 400;
+}
+
 :root {
   --primary: #ea4c89;
+  --primary-light: #f9cbdd;
   --white: #ffffff;
   --black: #000000 ;
 }
@@ -206,9 +243,11 @@ input, select {
   box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
 }
 
-main {
-  width: calc(100% - 10rem);
-  margin-left: auto;
+#main {
+  width: calc(100% - 12rem - 18rem);
+  min-height: calc(100vh - 4.75rem);
+  margin-left: 12rem;
+  margin-top: 4.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */
