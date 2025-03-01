@@ -202,41 +202,41 @@ input, select {
   width: 1.5rem;
 }
 
-.c-hero__nav {
+.c-navegacao__nav {
   padding: 1rem;
 }
-.c-hero__list {
+.c-navegacao__list {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 1rem;
 }
-.c-hero__list .c-list-item {
+.c-navegacao__list .c-list-item {
   padding: 1rem;
   overflow: hidden;
   border-radius: 0.5rem;
 }
-.c-hero__list .c-list-item svg {
+.c-navegacao__list .c-list-item svg {
   height: 1.95em;
   stroke-width: 2px;
   color: var(--primary);
   margin-bottom: 1rem;
 }
-.c-hero__list .c-list-item .link-title {
+.c-navegacao__list .c-list-item .link-title {
   font-weight: 600;
   font-size: 0.75rem;
   margin-bottom: 0.25rem;
 }
-.c-hero__list .c-list-item .link-span {
+.c-navegacao__list .c-list-item .link-span {
   color: var(--black);
   font-size: 0.675rem;
   font-weight: 500;
   opacity: 0.7;
 }
-.c-hero__list .c-list-item:first-child, .c-hero__list .c-list-item:hover {
+.c-navegacao__list .c-list-item:first-child, .c-navegacao__list .c-list-item:hover {
   background-color: var(--primary-light);
 }
-.c-hero__list .c-list-item:first-child svg, .c-hero__list .c-list-item:hover svg {
+.c-navegacao__list .c-list-item:first-child svg, .c-navegacao__list .c-list-item:hover svg {
   color: var(--black);
 }
 
