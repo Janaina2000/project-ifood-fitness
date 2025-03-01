@@ -18,9 +18,9 @@ function loadHTML(file, selector) {
 
 // Carregar o cabeçalho e o rodapé ao carregar o documento
 document.addEventListener('DOMContentLoaded', () => {
-  loadHTML('assets/html/base/header.html', 'header');
-  loadHTML('assets/html/pages/home/index.html', 'main');
-  loadHTML('assets/html/base/footer.html', 'footer');
+  loadHTML('/project-ifood-fitness/assets/html/base/header.html', 'header');
+  loadHTML('/project-ifood-fitness/assets/html/pages/home/index.html', 'main');
+  loadHTML('/project-ifood-fitness/assets/html/base/footer.html', 'footer');
 
 });
 

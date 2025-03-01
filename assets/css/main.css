@@ -99,6 +99,13 @@ input, select {
   vertical-align: middle;
 }
 
+:root {
+  --primary: #ea4c89;
+  --primary-light: #f9d8e5;
+  --white: #ffffff;
+  --black: #000000 ;
+}
+
 .aside-menu {
   position: fixed;
   top: 2rem;
@@ -206,13 +213,11 @@ input, select {
 }
 .c-hero__list .c-list-item {
   padding: 1rem;
-  border: 1px solid var(--primary);
   overflow: hidden;
   border-radius: 0.5rem;
 }
 .c-hero__list .c-list-item svg {
   height: 1.95em;
-  width: 1.95rem;
   stroke-width: 2px;
   color: var(--primary);
   margin-bottom: 1rem;
@@ -225,14 +230,14 @@ input, select {
 .c-hero__list .c-list-item .link-span {
   color: var(--black);
   font-size: 0.675rem;
-  font-weight: 400;
+  font-weight: 500;
+  opacity: 0.7;
 }
-
-:root {
-  --primary: #ea4c89;
-  --primary-light: #f9cbdd;
-  --white: #ffffff;
-  --black: #000000 ;
+.c-hero__list .c-list-item:first-child, .c-hero__list .c-list-item:hover {
+  background-color: var(--primary-light);
+}
+.c-hero__list .c-list-item:first-child svg, .c-hero__list .c-list-item:hover svg {
+  color: var(--black);
 }
 
 .container {
@@ -244,7 +249,6 @@ input, select {
 }
 
 #main {
-  width: calc(100% - 12rem - 18rem);
   min-height: calc(100vh - 4.75rem);
   margin-left: 12rem;
   margin-top: 4.75rem;

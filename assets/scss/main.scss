@@ -1,14 +1,10 @@
 
 @import './_reset.scss';
+@import './_variables.scss';
 @import './header.scss';
 @import './home/hero.scss';
 
-:root{
-    --primary: #ea4c89;
-    --primary-light: #f9cbdd;
-    --white: #ffffff;
-    --black: #000000
-}
+
 
 .container {
     width: 100%;         /* O container ocupa toda a largura disponível */
@@ -20,7 +16,7 @@
 
 #main {
     
-    width: calc(100% - 12rem - 18rem);
+
     min-height: calc(100vh - 4.75rem);
     margin-left: 12rem;
     margin-top: 4.75rem;
