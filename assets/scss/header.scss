@@ -2,7 +2,7 @@
     position: fixed;
     top: 2rem;
     left: 0;
-    box-shadow: 0.1755rem 0.175rem 2rem rgba(29, 29, 29, 0.2);
+    box-shadow: 0.15rem 0.15rem 0.75rem rgb(188 188 188 / 10%);
     overflow: hidden;
     width: 10rem;
     height: 100vh;
@@ -44,6 +44,7 @@
     background-color: var(--white);
     padding: 1.5rem 1rem ;
     padding-left: 0;
+    box-shadow: 0.15rem 0.15rem 0.75rem rgb(188 188 188 / 10%);
 
     .container-menu{
         display: flex;
